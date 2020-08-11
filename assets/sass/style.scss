@@ -8,6 +8,7 @@ $mainFnt: 'Open Sans', sans-serif;
 
 // COLOR PALETTE
 $darkBlue: #002a4e;
+$footerBlue: #00264e;
 $orange: #FF6600;
 $grey: #515151;
 
@@ -26,5 +27,14 @@ $grey: #515151;
 
 body {
     font-family: $mainFnt;
-    background-color: $orange;
+    color: $grey;
+
+    footer {
+        background-color: $footerBlue;
+    }
+}
+
+.navbar-light .navbar-toggler {
+    border: none;
+    outline: none;
 }
