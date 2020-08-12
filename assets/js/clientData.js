@@ -1,0 +1,21 @@
+
+(getClientDatase = () => {
+    const cliName = document.querySelectorAll('.cliName')
+    const clientName = 'Juliana'
+    for (let i = 0; i < cliName.length; i++) {
+        cliName[i].innerHTML = `Olá, ${clientName}`
+    }
+
+    const cliMail = document.querySelectorAll('.cliMail')
+    const clientEmail = 'juliana.pisaneschi@certisign.com.br'
+    for (let i = 0; i < cliMail.length; i++) {
+        cliMail[i].innerHTML = clientEmail
+    }
+
+    const cliConfig = document.querySelectorAll('.cliConfig')
+    const clientConfig = `<a href="#" title="Minha conta">Minha conta</a> | <a href="#" title="Sair">Sair</a>`
+    for (let i = 0; i < cliConfig.length; i++) {
+        cliConfig[i].innerHTML = clientConfig
+    }
+
+})()
