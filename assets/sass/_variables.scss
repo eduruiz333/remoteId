@@ -4,6 +4,9 @@ $footerBlue: #00264e;
 $orange: #FF6600;
 $grey: #515151;
 
+$bgDarkGrey: #e6e6e6;
+$bgLightGrey: #f2f2f2;
+
 // TEXT-COLORS
 .color-darkBlue {
   color: $darkBlue;
@@ -15,4 +18,12 @@ $grey: #515151;
 
 .color-grey {
   color: $grey;
+}
+
+.bgDarkGrey {
+  background-color: $bgDarkGrey;
+}
+
+.bgLightGrey {
+  background-color: $bgLightGrey;
 }

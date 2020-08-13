@@ -2,10 +2,24 @@
 @import 'typography';
 
 body {
-
   font-family: $mainFont;
+  font-size:62.5%; /* =10px */
+
 }
 
+h1 { font-size: 2.4em; } /* =24px */
+p { font-size: 1.4em; } /* =14px */
+
+a {
+  color: $darkBlue;
+  &:hover {
+    color: $darkBlue;
+  }
+  text-decoration: none;
+
+}
+
+//LINHA DO TEMPO
 .history-tl-container{
   margin:auto;
   display:block;

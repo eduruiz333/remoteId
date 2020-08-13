@@ -18,6 +18,79 @@
 
 // l — Large Screens
 @media (min-width: 1200px) {
+
+  .extend{
+    max-width: 1366px;
+  }
+
+  //HEADER E MENU
+  .nav-desktop {
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+      .cta-logo {
+        font-family: "Open Sans Condensed", sans-serif;
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+        margin: 0 1rem;
+        b {
+          color: $orange;
+        }
+      }
+    }
+
+    .navbar {
+      background-color: $bgDarkGrey;
+    }
+
+    .hail,
+    .cliName {
+      font-size: 1.2rem;
+      margin-bottom: 0;
+    }
+
+    .cliMail {
+      font-size: .7rem;
+    }
+
+    .nav-main {
+      .nav-item {
+        font-size: 1rem;
+        margin-left: 5rem;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        .nav-link {
+          background-size: 1rem;
+          padding-left: 1.5rem;
+
+          &:hover {
+            text-decoration: underline;
+          }
+
+          &.suporte {
+            background-size: .8rem;
+          }
+        }
+      }
+    }
+
+    .cliConfig {
+      font-size: .8rem;
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .my-account {
+        font-weight: bold;
+      }
+    }
+  }
+
+  //LINHA DO TEMPO
   ul.tl {
     li{
       margin-left:100px !important;

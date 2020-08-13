@@ -8,10 +8,46 @@
 
 .nav-mobile {
   .logo {
-    width: 50px;
+    width: 3rem;
   }
 
   .cliMail {
-    font-size: .5rem;
+    font-size: 0.6rem;
+  }
+
+  .cliConfig a {
+    color: $grey;
+    font-size: .7rem;
+    text-decoration: underline;
+  }
+}
+
+.nav-main {
+  font-family: $condensed;
+  font-size: 1.1rem;
+  margin-left: 1rem;
+
+  .nav-item {
+    .nav-link {
+      color: $darkBlue;
+      padding: 0.1rem 0 0.1rem 2rem;
+      background-position:  0 center;
+      background-repeat: no-repeat;
+      background-size: 1.3rem;
+      &.certificados {
+        background-image: url('../../assets/img/icones-remoteid/Ico-cloud.svg');
+      }
+      &.extrato {
+        background-image: url('../img/icones-remoteid/Ico-extrato.svg');
+      }
+      &.funcionalidades {
+        background-image: url('../../assets/img/icones-remoteid/Ico-conf.svg');
+      }
+      &.suporte {
+        background-image: url('../../assets/img/icones-remoteid/Ico-help.svg');
+        background-size: 1.1rem;
+        background-position:  2px center;
+      }
+    }
   }
 }
