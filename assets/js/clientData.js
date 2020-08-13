@@ -3,7 +3,7 @@
     const cliName = document.querySelectorAll('.cliName')
     const clientName = 'Juliana'
     for (let i = 0; i < cliName.length; i++) {
-        cliName[i].innerHTML = `Olá, ${clientName}`
+        cliName[i].innerHTML = `<span class="text-light">Olá,</span> ${clientName}`
     }
 
     const cliMail = document.querySelectorAll('.cliMail')

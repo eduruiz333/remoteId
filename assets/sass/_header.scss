@@ -1,4 +1,17 @@
+@import 'variables';
+@import 'typography';
+
 .navbar-light .navbar-toggler {
   border: none;
   outline: none;
+}
+
+.nav-mobile {
+  .logo {
+    width: 50px;
+  }
+
+  .cliMail {
+    font-size: .5rem;
+  }
 }

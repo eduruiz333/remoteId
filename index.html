@@ -21,7 +21,6 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 		<link rel="stylesheet" href="assets/css/style.css">
-		<link rel="stylesheet" href="assets/css/responsive.css">
 
 	</head>
 	<body>
@@ -30,9 +29,9 @@
 		<header>
 
 			<!--MENU PARA VERSÃO MOBILE-->
-			<nav class="navbar navbar-expand-lg navbar-light bg-light d-lg-none">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light d-lg-none nav-mobile">
 				<a href="#" class="navbar-brand d-flex align-items-center">
-					<img src="./assets/img/icones-remoteid/nuvem_remoteID.svg" alt="Remote ID">
+					<img class="logo" src="./assets/img/icones-remoteid/nuvem_remoteID.svg" alt="Remote ID">
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -48,10 +47,10 @@
 			<!--/MENU PARA VERSÃO MOBILE-->
 
 			<!--/MENU PARA VERSÃO DESKTOP-->
-			<div class=" d-none d-lg-block">
+			<div class=" d-none d-lg-block nav-desktop">
 				<div class="d-md-flex align-items-center justify-content-between">
 					<a href="#" class="d-flex align-items-center">
-						<img src="./assets/img/icones-remoteid/nuvem_remoteID.svg" alt="Remote ID">
+						<img class="logo" src="./assets/img/icones-remoteid/nuvem_remoteID.svg" alt="Remote ID">
 						<p class="small">
 							Gerencie seu Certificado Digital
 							<br>
@@ -81,39 +80,43 @@
 
 	<div class="container">
 		<main>
-			<div class="row mx-0">
+			<section class="timeline">
+				<div class="row mx-0">
+					<div class="col">
+						<h1 class="cliName"></h1>
 
-				<div class="col">
-					<h1>ALOHA, PRIMO!</h1>
-					<h1>ALOHA, PRIMO!</h1>
-					<h1>ALOHA, PRIMO!</h1>
-					<h1>ALOHA, PRIMO!</h1>
-					<h1>ALOHA, PRIMO!</h1>
-					<h1>ALOHA, PRIMO!</h1>
-					<h1>ALOHA, PRIMO!</h1>
-					<h1>ALOHA, PRIMO!</h1>
-					<h1>ALOHA, PRIMO!</h1>
-					<h1>ALOHA, PRIMO!</h1>
-					<h1>ALOHA, PRIMO!</h1>
-					<h1>ALOHA, PRIMO!</h1>
-					<h1>ALOHA, PRIMO!</h1>
-					<h1>ALOHA, PRIMO!</h1>
-					<h1>ALOHA, PRIMO!</h1>
-					<h1>ALOHA, PRIMO!</h1>
-					<h1>ALOHA, PRIMO!</h1>
-					<h1>ALOHA, PRIMO!</h1>
-					<h1>ALOHA, PRIMO!</h1>
-					<h1>ALOHA, PRIMO!</h1>
-					<h1>ALOHA, PRIMO!</h1>
-					<h1>ALOHA, PRIMO!</h1>
-					<h1>ALOHA, PRIMO!</h1>
-					<h1>ALOHA, PRIMO!</h1>
-					<h1>ALOHA, PRIMO!</h1>
-					<h1>ALOHA, PRIMO!</h1>
-					<h1>ALOHA, PRIMO!</h1>
-					<h1>ALOHA, PRIMO!</h1>
+						<h4>Entenda os passos para configurar o seu remoteID</h4>
+						<h4>Entenda os passos para configurar o seu remoteID</h4>
+
+						<!--TIMELINE-->
+						<div class="history-tl-container">
+							<ul class="tl">
+								<li class="tl-item">
+									<p class="item-title">1. Conta configurada</p>
+									<p class="item-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
+								</li>
+								<li class="tl-item">
+									<p class="item-title">2. e-Token no celular</p>
+									<p class="item-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
+									<p><a class="btn btn-outline-primary" data-toggle="collapse" href="#step2" role="button" aria-expanded="false" aria-controls="step2">Ver mais</a></p>
+
+									<div class="collapse" id="step2">
+										<div class="card card-body">
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+										</div>
+									</div>
+								</li>
+								<li class="tl-item">
+									<p class="item-title">3. Configure o e-Token do seu Certificado Digital</p>
+									<p class="item-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
+								</li>
+							</ul>
+						</div>
+						<!--/TIMELINE-->
+
+					</div>
 				</div>
-			</div>
+			</section>
 		</main>
 
 	</div>

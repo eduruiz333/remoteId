@@ -1,5 +1,70 @@
+@import 'variables';
+@import 'typography';
+
 body {
-  font-family: $mainFnt;
-  color: $grey;
+
+  font-family: $mainFont;
 }
+
+.history-tl-container{
+  margin:auto;
+  display:block;
+  position:relative;
+
+  ul.tl {
+    margin: 20px 0;
+    padding: 0;
+    display: inline-block;
+
+    li{
+      list-style: none;
+      margin-left:20px;
+      min-height:50px;
+      border-left:1px solid $darkBlue;
+      padding:0 0 50px 30px;
+      position:relative;
+
+      &:last-child{
+        border-left:0;
+        margin-left: 21px;
+      }
+
+      &::before{
+        position: absolute;
+        left: -11px;
+        top: -5px;
+        content: " ";
+        //border: 8px solid rgba(255, 255, 255, 0.74);
+        border-radius: 500%;
+        background: $darkBlue;
+        height: 20px;
+        width: 20px;
+        transition: all 500ms ease-in-out;
+
+      }
+
+      &:hover::before{
+        border-color:  #258CC7;
+        transition: all 1000ms ease-in-out;
+      }
+
+      .item-detail{
+        color:rgba(0,0,0,0.5);
+        font-size:12px;
+      }
+
+      .timestamp{
+        color: #8D8D8D;
+        position: absolute;
+        width:100px;
+        left: -50%;
+        text-align: right;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+
+
 
