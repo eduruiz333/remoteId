@@ -1,12 +1,18 @@
-// FONT TYPES
-@font-face {
-  font-family: 'Open Sans', sans-serif;
+ @font-face {
+  font-family: mainFont;
+  src: url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+  src: url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+  src: url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
 }
 
- @font-face {
-   font-family: 'Open Sans Condensed', sans-serif;
- }
+@font-face {
+  font-family: condensed;
+  src: url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
+}
 
 $mainFont: 'Open Sans', sans-serif;
-
 $condensed: 'Open Sans Condensed', sans-serif;
+
+body {
+  font-family: $mainFont;
+}

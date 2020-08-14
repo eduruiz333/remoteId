@@ -1,5 +1,4 @@
 (menu = () => {
-
     const menu = document.querySelectorAll('.nav-main')
     const menuItens = `
         <li class="nav-item">
