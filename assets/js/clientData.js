@@ -1,5 +1,5 @@
 
-(getClientDatase = () => {
+(getClientData = () => {
     const cliName = document.querySelectorAll('.cliName')
     const clientName = 'Juliana'
     for (let i = 0; i < cliName.length; i++) {
