@@ -1,4 +1,3 @@
-
 (getClientData = () => {
     const cliName = document.querySelectorAll('.cliName')
     const clientName = 'Juliana'

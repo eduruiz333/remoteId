@@ -3,18 +3,25 @@
 
 body {
   font-family: $mainFont;
-  font-size:62.5%;
+  font-size: 62.5%;
   color: $grey;
 }
 
-h1 { font-size: 3.1em; }
-p { font-size: 1.6em; }
+h1 {
+  font-size: 3.1em;
+}
+
+p {
+  font-size: 1.6em;
+}
 
 a {
   color: $darkBlue;
+
   &:hover {
     color: $darkBlue;
   }
+
   text-decoration: none;
 }
 
@@ -81,7 +88,7 @@ a {
         border-color: $orange;
         transition: all 1000ms ease-in-out;
       }
-      
+
       .item-title {
         font-family: $condensed;
         font-size: 1.5rem;
@@ -130,7 +137,3 @@ a {
     }
   }
 }
-
-
-
-

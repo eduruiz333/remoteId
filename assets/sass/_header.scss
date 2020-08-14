@@ -31,22 +31,26 @@
     .nav-link {
       color: $darkBlue;
       padding: 0.1rem 0 0.1rem 2rem;
-      background-position:  0 center;
+      background-position: 0 center;
       background-repeat: no-repeat;
       background-size: 1.3rem;
+
       &.certificados {
         background-image: url('../../assets/img/icones-remoteid/Ico-cloud.svg');
       }
+
       &.extrato {
         background-image: url('../img/icones-remoteid/Ico-extrato.svg');
       }
+
       &.funcionalidades {
         background-image: url('../../assets/img/icones-remoteid/Ico-conf.svg');
       }
+
       &.suporte {
         background-image: url('../../assets/img/icones-remoteid/Ico-help.svg');
         background-size: 1.1rem;
-        background-position:  2px center;
+        background-position: 2px center;
       }
     }
   }

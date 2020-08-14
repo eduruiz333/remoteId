@@ -1,7 +1,7 @@
 (menu = () => {
 
     const menu = document.querySelectorAll('.nav-main')
-     const menuItens = `
+    const menuItens = `
         <li class="nav-item">
             <a class="nav-link certificados" href="#" title="Meus Certificados">Meus Certificados</a>
         </li>
