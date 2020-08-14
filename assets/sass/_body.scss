@@ -59,29 +59,30 @@ a {
 
     li {
       list-style: none;
-      margin-left: 22px;
+      margin-left: -15px; /* margin-left: -15px; */
       min-height: 50px;
       border-left: 3px solid $darkBlue;
-      padding: 0 0 50px 80px;
+      padding: 0 0 50px 35px; /* 0 0 50px 35px */
       position: relative;
 
       &:last-child {
         border-left: 0;
-        margin-left: 21px;
+        margin-left: -10px; /* 21px */
       }
 
       &::before {
         position: absolute;
-        left: -62px;
+        left: -32px; /* -32px; */
         top: -5px;
         content: " ";
         border-radius: 500%;
-        height: 120px;
-        width: 120px;
+        height: 60px; /* 60 */
+        width: 60px;
         transition: all 500ms ease-in-out;
         background-color: $darkBlue;
         background-position: center center;
         background-repeat: no-repeat;
+        background-size: 2rem;
       }
 
       &:hover::before {
@@ -94,6 +95,7 @@ a {
         font-size: 1.5rem;
         font-weight: bold;
         color: $darkBlue;
+        line-height: 1.4rem;
       }
 
       .item-detail {
@@ -109,6 +111,7 @@ a {
       &.mobile {
         &::before {
           background-image: url('../img/icones-remoteid/Ico-mobile-branco.svg');
+          background-size: 1.2rem;
         }
       }
 

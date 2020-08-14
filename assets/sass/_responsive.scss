@@ -88,12 +88,38 @@
   }
 
   //LINHA DO TEMPO
-  ul.tl {
-    li {
-      margin-left: 100px !important;
+  .history-tl-container {
 
-      &:last-child {
-        margin-left: 101px !important;
+    ul.tl {
+
+      li {
+        margin-left: 22px;
+        padding: 0 0 50px 80px;
+
+        &:last-child {
+          margin-left: 21px;
+        }
+
+        &::before {
+          left: -62px;
+          top: -5px;
+          height: 120px;
+          width: 120px;
+          background-size: unset;
+        }
+
+        .item-title {
+          font-family: $condensed;
+          font-size: 1.5rem;
+          font-weight: bold;
+          color: $darkBlue;
+        }
+
+        &.mobile {
+          &::before {
+            background-size: unset;
+          }
+        }
       }
     }
   }
