@@ -1,3 +1,6 @@
+.nav-desktop {
+  display: none;
+}
 .cliName {
   position: absolute;
   z-index: 999;
@@ -83,13 +86,16 @@
   position: absolute;
   min-width: 290px;
   margin: 2px 0 0 -280px;
-  list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
   transform: translate(100%, 0);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
   background-color: $white;
+}
 
+.nav-main {
+  list-style-type: none;
+  
   li {
     padding: .4rem 0;
     font-size: 1.1rem;
@@ -141,8 +147,4 @@
     }
   }
 }
-
-
-
-
 
