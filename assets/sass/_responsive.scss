@@ -2,27 +2,49 @@
 @media (min-width: 320px) {}
 
 // s — Small Screens
-@media (min-width: 640px) {}
-
-// m — Medium Screens
-@media (min-width: 960px) {}
-
-// l — Large Screens
-@media (min-width: 1200px) {
+@media (min-width: 640px) {
+  .content {
+    margin-top: 0;
+  }
 
   .extend {
     max-width: 1366px;
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1rem 5rem;
   }
 
   //HEADER E MENU
   .nav-desktop {
+    display: block;
+
+    &.extend {
+      padding: 0;
+    }
+
+    .flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: .6rem 1rem;
+
+      &.p-0 {
+        padding: 0;
+      }
+
+      .client-info {
+        margin-right: 2rem;
+      }
+    }
+
     a {
       &:hover {
         text-decoration: none;
       }
 
       .cta-logo {
-        font-family: "Open Sans Condensed", sans-serif;
+        font-family:$condensed;
         font-size: 1.3rem;
         line-height: 1.6rem;
         margin: 0 1rem;
@@ -35,16 +57,24 @@
 
     .navbar {
       background-color: $bgDarkGrey;
+
+      .nav-main {
+        display: flex;
+        margin: 0;
+      }
     }
 
     .hail,
     .cliName {
       font-size: 1.2rem;
       margin-bottom: 0;
+      text-align: right;
     }
 
     .cliMail {
       font-size: .7rem;
+      margin-top: 0;
+      
     }
 
     .nav-main {
@@ -72,16 +102,25 @@
     }
 
     .cliConfig {
-      font-size: .8rem;
+      font-size: .5rem;
 
       a:hover {
         text-decoration: underline;
       }
 
       .my-account {
-        font-weight: bold;
+        margin: 0 2rem 0 0;
+        padding: 0;
+
+        a:first-child {
+          font-weight: bold;
+        }
       }
     }
+  }
+
+  .nav-mobile {
+    display: none;
   }
 
   //LINHA DO TEMPO
@@ -121,6 +160,12 @@
     }
   }
 }
+
+// m — Medium Screens
+@media (min-width: 960px) { }
+
+// l — Large Screens
+@media (min-width: 1200px) { }
 
 // xl — Extra Large Screens
 @media (min-width: 1600px) {}

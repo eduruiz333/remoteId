@@ -2,10 +2,17 @@ body {
   font-family: $mainFont;
   font-size: 62.5%;
   color: $grey;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 h1 {
   font-size: 3.1em;
+
+  &.hail {
+    font-weight: normal;
+  }
 }
 
 p {
@@ -22,24 +29,36 @@ a {
   text-decoration: none;
 }
 
+.content {
+  background-color: $bgLightGrey;
+  margin-top: 2.5rem;
+  padding: 0.1rem 1rem;
+
+
+  .history-tl-container {
+    padding-left: 2.2rem;
+  }
+}
+
 .btn-outline-info {
-  border-color: $orange !important;
-  color: $orange !important;
-  outline: none !important;
-  box-shadow: none !important;
-  border-radius: .4rem !important;
+  border-color: $orange;
+  color: $orange;
+  border: solid 1px $orange;
+  padding: .5rem;
+  border-radius: .4rem;
+  transition: all 300ms ease-in-out;
 
   &:hover {
-    background-color: $orange !important;
-    color: $white !important;
-    outline: none !important;
-    box-shadow: none !important;
+    background-color: $orange;
+    color: $white;
+    outline: none;
+    box-shadow: none;
   }
 
   &:active {
-    background-color: $orange !important;
-    outline: none !important;
-    box-shadow: none !important;
+    background-color: $orange;
+    outline: none;
+    box-shadow: none;
   }
 }
 
@@ -61,6 +80,7 @@ a {
       border-left: 3px solid $darkBlue;
       padding: 0 0 50px 35px; 
       position: relative;
+      margin-bottom: -24px;
 
       &:last-child {
         border-left: 0;
@@ -130,8 +150,32 @@ a {
         }
       }
 
-      .card-body {
-        font-size: .5rem;
+      .collapse {
+        label {
+          display: inline-block;
+          padding: .5rem;
+          font-size: 1rem;
+          cursor: pointer;
+          margin-bottom: .8rem;
+        }
+
+        .card-body {
+          display: none;
+          font-size: .5rem;
+          overflow-y: hidden;
+          background-color: $white;
+          border: solid 1px $bgDarkGrey;
+          border-radius: 10px;
+          padding: 0 1rem;
+        }
+
+        input {
+          display: none;
+
+          &:checked~.card-body {
+            display: block;
+          }
+        }
       }
     }
   }

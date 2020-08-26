@@ -1,55 +1,150 @@
-
-.navbar-light .navbar-toggler {
-  border: none;
-  outline: none;
+.nav-desktop {
+  display: none;
 }
+.cliName {
+  position: absolute;
+  z-index: 999;
+  padding: .2rem .5rem;
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  align-items: center;
+  justify-content: space-between;
+  color: $darkBlue;
 
-.nav-mobile {
-  .logo {
+  img {
     width: 3rem;
   }
+}
 
-  .cliMail {
-    font-size: 0.6rem;
+#menuToggle {
+  display: block;
+  position: relative;
+  top: 20px;
+  left: 85%;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+
+  a {
+    transition: color 0.3s ease;
   }
 
-  .cliConfig a {
-    color: $grey;
-    font-size: .7rem;
-    text-decoration: underline;
+  input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
   }
+
+  span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: $grey;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+      opacity 0.55s ease;
+
+      &:nth-last-child(2) {
+        transform-origin: 0% 100%;
+      }
+  }
+
+  input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+
+    &:nth-last-child(3) {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    &:nth-last-child(2) {
+      transform: rotate(-45deg) translate(0, -1px);
+    }
+  }
+
+  input:checked~ul {
+    transform: none;
+  }
+}
+
+
+#menu {
+  position: absolute;
+  min-width: 290px;
+  margin: 2px 0 0 -280px;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+  background-color: $white;
 }
 
 .nav-main {
-  font-family: $condensed;
-  font-size: 1.1rem;
-  margin-left: 1rem;
+  list-style-type: none;
+  
+  li {
+    padding: .4rem 0;
+    font-size: 1.1rem;
+    margin-left: 1rem;
 
-  .nav-item {
-    .nav-link {
-      color: $darkBlue;
-      padding: 0.1rem 0 0.1rem 2rem;
-      background-position: 0 center;
-      background-repeat: no-repeat;
-      background-size: 1.3rem;
+    &.cliConfig {
+      p {
+        margin: 0;
+        padding: 0;
+        font-size: .7rem;
+        color: $grey;
+        padding-right: .8rem;
+        text-align: right;
 
-      &.certificados {
-        background-image: url('../../assets/img/icones-remoteid/Ico-cloud.svg');
+        &.my-account a {
+          color: $grey;
+          text-decoration: underline;
+        }
       }
+    }
 
-      &.extrato {
-        background-image: url('../img/icones-remoteid/Ico-extrato.svg');
-      }
-
-      &.funcionalidades {
-        background-image: url('../../assets/img/icones-remoteid/Ico-conf.svg');
-      }
-
-      &.suporte {
-        background-image: url('../../assets/img/icones-remoteid/Ico-help.svg');
-        background-size: 1.1rem;
-        background-position: 2px center;
+    &.nav-item {
+      .nav-link {
+        font-family: $condensed;
+        color: $darkBlue;
+        padding: 0.1rem 0 0.1rem 2rem;
+        background-position: 0 center;
+        background-repeat: no-repeat;
+        background-size: 1.3rem;
+  
+        &.certificados {
+          background-image: url('../../assets/img/icones-remoteid/Ico-cloud.svg');
+        }
+  
+        &.extrato {
+          background-image: url('../img/icones-remoteid/Ico-extrato.svg');
+        }
+  
+        &.funcionalidades {
+          background-image: url('../../assets/img/icones-remoteid/Ico-conf.svg');
+        }
+  
+        &.suporte {
+          background-image: url('../../assets/img/icones-remoteid/Ico-help.svg');
+          background-size: 1.1rem;
+          background-position: 2px center;
+        }
       }
     }
   }
 }
+
