@@ -150,8 +150,32 @@ a {
         }
       }
 
-      .card-body {
-        font-size: .5rem;
+      .collapse {
+        label {
+          display: inline-block;
+          padding: .5rem;
+          font-size: 1rem;
+          cursor: pointer;
+          margin-bottom: .8rem;
+        }
+
+        .card-body {
+          display: none;
+          font-size: .5rem;
+          overflow-y: hidden;
+          background-color: $white;
+          border: solid 1px $bgDarkGrey;
+          border-radius: 10px;
+          padding: 0 1rem;
+        }
+
+        input {
+          display: none;
+
+          &:checked~.card-body {
+            display: block;
+          }
+        }
       }
     }
   }
