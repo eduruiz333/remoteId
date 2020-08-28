@@ -86,7 +86,6 @@ hr {
 }
 
 
-
 //LINHA DO TEMPO
 .history-tl-container {
   padding-left: 2.2rem;
@@ -149,26 +148,22 @@ hr {
           background-image: url('../img/icones-remoteid/Ico-userAccount.svg');
         }
       }
-
       &.mobile {
         &::before {
           background-image: url('../img/icones-remoteid/Ico-mobile-branco.svg');
           background-size: 1.2rem;
         }
       }
-
       &.token {
         &::before {
           background-image: url('../img/icones-remoteid/ico_confeToken.svg');
         }
       }
-
       &.desktop {
         &::before {
           background-image: url('../img/icones-remoteid/Ico-desktop.svg');
         }
       }
-
       &.ready {
         &::before {
           background-color: $orange;
@@ -204,6 +199,8 @@ hr {
   }
 }
 
+
+//TELA DE LOGIN
 .login {
   box-sizing: border-box;
   padding: 0 .5rem;

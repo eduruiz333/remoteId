@@ -3,11 +3,13 @@
   src: url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
   src: url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
   src: url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
+  font-weight:700;
 }
 
 @font-face {
   font-family: condensed;
   src: url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
+  font-weight:300;
 }
 
 $mainFont: 'Open Sans', sans-serif;
