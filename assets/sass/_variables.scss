@@ -7,7 +7,7 @@ $mediumGrey: #aeaeae;
 
 $bgDarkGrey: #e6e6e6;
 $bgLightGrey: #f2f2f2;
-
+$borderGrey: #cccccc;
 $white: #ffffff;
 $black: #000000;
 
@@ -49,7 +49,7 @@ $black: #000000;
 }
 
 .rounded {
-  border: solid 1px $bgDarkGrey;
+  border: solid 1px $borderGrey;
   border-radius: 15px;
 }
 

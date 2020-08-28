@@ -159,6 +159,20 @@
       }
     }
   }
+
+  .login {
+    display: flex;
+    align-content: center;
+    align-items:flex-end;
+    justify-content: center;
+
+    hr {
+      margin: 0 6rem 3rem;
+      width: 1px;
+      height: 13rem;
+      width: 1px;
+    }
+  }
 }
 
 // m — Medium Screens
