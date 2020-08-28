@@ -9,19 +9,20 @@ body {
 
 h1 {
   font-size: 3.1em;
+  font-family: $mainFont;
 
   &.hail {
     font-weight: normal;
+    font-family: $mainFont;
   }
 }
 
 p {
-  font-size: 1.6em;
+  font-size: 1.5em;
 }
 
 a {
   color: $darkBlue;
-
   &:hover {
     color: $darkBlue;
   }
@@ -29,41 +30,66 @@ a {
   text-decoration: none;
 }
 
+hr {
+  height: 1px;
+  width: 80%;
+  background-color: $mediumGrey;
+  border: none;
+  margin: 2rem auto;
+}
+
 .content {
   background-color: $bgLightGrey;
   margin-top: 2.5rem;
   padding: 0.1rem 1rem;
-
-
-  .history-tl-container {
-    padding-left: 2.2rem;
-  }
 }
 
-.btn-outline-info {
-  border-color: $orange;
-  color: $orange;
-  border: solid 1px $orange;
+.btn {
+  background-color: $darkBlue;
+  border-color: $darkBlue;
+  color: $white;
+  border: solid 1px $darkBlue;
   padding: .5rem;
+  font-size: 1rem;
   border-radius: .4rem;
   transition: all 300ms ease-in-out;
+  cursor: pointer;
 
   &:hover {
     background-color: $orange;
-    color: $white;
+    border-color: $orange;
+    color: $white !important;
     outline: none;
     box-shadow: none;
   }
 
   &:active {
-    background-color: $orange;
+    background-color: $darkBlue;
     outline: none;
     box-shadow: none;
   }
+
+  &.btn-outline-info {
+    background-color: $white;
+    border-color: $orange;
+    color: $orange;
+    border-color: $orange;
+
+    &:hover {
+      background-color: $orange;
+    }
+
+    &:active {
+      background-color: $orange;
+    }
+  }
 }
+
+
 
 //LINHA DO TEMPO
 .history-tl-container {
+  padding-left: 2.2rem;
   margin: auto;
   display: block;
   position: relative;
@@ -75,10 +101,10 @@ a {
 
     li {
       list-style: none;
-      margin-left: -15px; 
+      margin-left: -15px;
       min-height: 50px;
       border-left: 3px solid $darkBlue;
-      padding: 0 0 50px 35px; 
+      padding: 0 0 50px 35px;
       position: relative;
       margin-bottom: -24px;
 
@@ -89,10 +115,10 @@ a {
 
       &::before {
         position: absolute;
-        left: -32px; 
+        left: -32px;
         content: " ";
         border-radius: 500%;
-        height: 60px; 
+        height: 60px;
         width: 60px;
         transition: all 500ms ease-in-out;
         background-color: $darkBlue;
@@ -153,9 +179,6 @@ a {
       .collapse {
         label {
           display: inline-block;
-          padding: .5rem;
-          font-size: 1rem;
-          cursor: pointer;
           margin-bottom: .8rem;
         }
 
@@ -175,6 +198,98 @@ a {
           &:checked~.card-body {
             display: block;
           }
+        }
+      }
+    }
+  }
+}
+
+.login {
+  box-sizing: border-box;
+  padding: 0 .5rem;
+  margin: 2rem auto;
+  color: $darkBlue;
+
+  form {
+    background-color: $white;
+    box-sizing: border-box;
+    padding: 1.8rem 1.3rem 0;
+    margin-bottom: .6rem;
+
+    label,
+    input {
+      box-sizing: border-box;
+      display: block;
+      font-size: .7rem;
+      color: $darkBlue;
+      width: 100%;
+      margin-bottom: .2rem;
+    }
+
+    input[type=text],
+    input[type=password] {
+      border: none;
+      box-shadow: none;
+      outline: none;
+      font-size: 1rem;
+      border-bottom: solid 2px $mediumGrey;
+      color: $grey;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .rounded-icon {
+    padding: 0;
+    margin: 2rem 0 0;
+    font-size: .8rem;
+
+    li {
+      list-style: none;
+      min-height: 30px;
+      padding: 0 0 50px 50px;
+      position: relative;
+      margin-bottom: -24px;
+
+      &:last-child {
+        padding-bottom: 1rem;
+      }
+
+      &::before {
+        position: absolute;
+        top: -11px;
+        left: 0;
+        content: " ";
+        height: 40px;
+        width: 40px;
+        border-radius: 500%;
+        border: solid 1px $mediumGrey;
+        transition: all 500ms ease-in-out;
+        background-color: $white;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 1rem;
+      }
+
+      &.rocket {
+        &::before {
+          background-image: url('../img/icones-remoteid/Icon-rocket-func-blue.svg');
+        }
+      }
+      &.list {
+        &::before {
+          background-image: url('../img/icones-remoteid/Ico-extrato.svg');
+        }
+      }
+      &.cloud {
+        &::before {
+          background-image: url('../img/icones-remoteid/Ico-cloud.svg');
+          background-size: 1.2rem;
+        }
+      }
+      &.info {
+        &::before {
+          background-image: url('../img/icones-remoteid/Ico-help.svg');
+          background-size: .9rem;
         }
       }
     }

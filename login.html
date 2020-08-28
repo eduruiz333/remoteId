@@ -94,55 +94,39 @@
 	<!--CONTEÚDO PRINCIPAL-->
 	<main>
 		<section>
+
 			<div class="content extend">
-				<h1 class="hail">Olá, <b>juliana</b></h1>
-				<p>Entenda os passos para configurar o seu remoteID</p>
-				<!--TIMELINE-->
-				<div class="history-tl-container">
-					<ul class="tl">
-						<li class="tl-item user">
-							<p class="item-title">1. Conta configurada</p>
-							<p class="item-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
-						</li>
-						<li class="tl-item mobile">
-							<p class="item-title">2. e-Token no celular</p>
-							<p class="item-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
-							<div class="collapse">
-								<label for="step2" class="btn btn-outline-info"> Ver mais</label>
-								<input type="checkbox" class="show-hide" id="step2">
-								<div class="card card-body">
-									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
-									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
-									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
-									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
-								</div>
-							</div>
-						</li>
-						<li class="tl-item token">
-							<p class="item-title">3. Configure o e-Token do seu Certificado Digital</p>
-							<p class="item-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
-						</li>
-						<li class="tl-item desktop">
-							<p class="item-title">4.desktopID no seu computador</p>
-							<p class="item-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
-							<div class="collapse">
-								<label for="step4" class="btn btn-outline-info"> Ver mais</label>
-								<input type="checkbox" class="show-hide" id="step4">
-								<div class="card card-body">
-									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
-									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
-									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
-									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
-								</div>
-							</div>
-						</li>
-						<li class="tl-item ready">
-							<p class="item-title"><b>Pronto!</b></p>
-							<p class="item-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
-						</li>
-					</ul>
+				<div class="login">
+					<h2>Login</h2>
+					<form action="POST" id="login" class="rounded">
+						<div class="user">
+							<label for="userID">E-mail</label>
+							<input type="text" name="user" id="userID" placeholder="Usuário">
+						</div>
+						<div class="password">
+							<label for="password">Senha da conta</label>
+							<input type="password" name="pass" id="password" placeholder="Senha">
+						</div>
+						<div class="w-100">
+							<button type="button" class="btn w-100">Entrar</button>
+						</div>
+						<h5 class="text-center mainFont regular"><a href="#" class="underline" title="Esqueci a senha">Esqueci a senha</a></h5>
+					</form>
+					<h5 class="text-center mainFont regular mt-0"><a href="#" class="underline" title="Não recebi o e-mail de ativação da conta">Não recebi o e-mail de <strong>ativação da conta</strong></a></h5>
+
+					<hr noshade="noshade">
+
+					<div class="content mt-0 px-0">
+						<p class="mt-0">Esse é <strong>seu espaço exlcusivo</strong> para:</p>
+						<ul class="rounded-icon">
+							<li class="rocket">Alterar <strong>senhas</strong> e cadastrar <strong>dispositivos</strong></li>
+							<li class="list">Consultar o <strong>extrato de uso</strong></li>
+							<li class="cloud">Gerenciar seus <strong>Certificados na nuvem</strong></li>
+							<li class="info">Ter acesso à <strong>ajuda e suporte</strong></li>
+						</ul>
+						<p class="pt-0"><a href="#" class="underline" title="Quero me cadastrar agora">Quero me cadastrar agora</a></p>
+					</div>
 				</div>
-				<!--/TIMELINE-->
 			</div>
 
 		</section>

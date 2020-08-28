@@ -3,6 +3,7 @@ $darkBlue: #002a4e;
 $footerBlue: #00264e;
 $orange: #FF6600;
 $grey: #515151;
+$mediumGrey: #aeaeae;
 
 $bgDarkGrey: #e6e6e6;
 $bgLightGrey: #f2f2f2;
@@ -37,4 +38,72 @@ $black: #000000;
 
 .bgLightGrey {
   background-color: $bgLightGrey;
+}
+
+.d-none {
+  display: none;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.rounded {
+  border: solid 1px $bgDarkGrey;
+  border-radius: 15px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+.ml-0 {
+  margin-left: 0 !important;
+}
+.mr-0 {
+  margin-right: 0 !important;
+}
+.mx-0 {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.my-0 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.pt-0 {
+  padding-top: 0 !important;
+}
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+.pl-0 {
+  padding-left: 0 !important;
+}
+.pr-0 {
+  padding-right: 0 !important;
+}
+.px-0 {
+  padding-left: 0 !important;
+  margin-right: 0 !important;
+}
+.py-0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }

@@ -13,6 +13,54 @@
 $mainFont: 'Open Sans', sans-serif;
 $condensed: 'Open Sans Condensed', sans-serif;
 
+.mainFont {
+  font-family: $mainFont;
+}
+
+.condensed {
+  font-family: $condensed;
+}
+
+.regular {
+  font-weight: normal;
+}
+
 body {
   font-family: $mainFont;
+}
+
+h1 {
+  font-size: 2rem;
+  color: $darkBlue;
+  font-family: $condensed;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: $darkBlue;
+  font-family: $condensed;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: $darkBlue;
+  font-family: $condensed;
+}
+
+h4 {
+  font-size: 1rem;
+  color: $darkBlue;
+  font-family: $condensed;
+}
+
+h5 {
+  font-size: .8rem;
+  color: $darkBlue;
+  font-family: $condensed;
+}
+
+h6 {
+  font-size: .6rem;
+  color: $darkBlue;
+  font-family: $condensed;
 }
