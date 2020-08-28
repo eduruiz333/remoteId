@@ -64,3 +64,5 @@ Thumbs.db
 /node_modules
 /psd
 /assets/img/orig
+
+package-lock.json
